@@ -1,0 +1,85 @@
+/* Set the font family and size for the entire document */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Set the background color of the entire document */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Center the chart container horizontally */
+#chart {
+  margin: 0 auto;
+}
+
+/* Set the font size and color of the chart title */
+#chart-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the SVG element */
+svg {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the chart area */
+.chart {
+  margin: 20px;
+}
+
+/* Style the chart axes */
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #666;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Style the chart line */
+.line {
+  fill: none;
+  stroke: #00bfff;
+  stroke-width: 2px;
+}
+
+/* Style the chart dots */
+.dot {
+  fill: #00bfff;
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+/* Style the chart tooltip */
+.tooltip {
+  position: absolute;
+  z-index: 999;
+  background-color: #ffa07a;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 12px;
+  color: #333;
+  pointer-events: none;
+}
+
+.tooltip:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: #ddd transparent transparent transparent;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
